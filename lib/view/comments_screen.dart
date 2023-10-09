@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nmg_assignment/models/comments_response.dart';
+import 'package:nmg_assignment/data/models/comments_response.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../cubit/post_state.dart';

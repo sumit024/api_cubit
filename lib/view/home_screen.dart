@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nmg_assignment/cubit/post_state.dart';
 import 'package:nmg_assignment/cubit/posts_cubit.dart';
-import 'package:nmg_assignment/models/posts_response.dart';
-import 'package:nmg_assignment/ui/comments_screen.dart';
+import 'package:nmg_assignment/data/models/posts_response.dart';
+import 'package:nmg_assignment/view/comments_screen.dart';
 
-import '../models/users_list_response.dart';
+import '../data/models/users_list_response.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

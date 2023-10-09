@@ -1,7 +1,7 @@
-import 'package:nmg_assignment/models/comments_response.dart';
-import 'package:nmg_assignment/models/posts_response.dart';
-import 'package:nmg_assignment/models/users_list_response.dart';
-import 'package:nmg_assignment/repository/dio_instance.dart';
+import 'package:nmg_assignment/data/models/comments_response.dart';
+import 'package:nmg_assignment/data/models/posts_response.dart';
+import 'package:nmg_assignment/data/models/users_list_response.dart';
+import 'package:nmg_assignment/data/dio/dio_instance.dart';
 import 'package:dio/dio.dart';
 
 class PostRepository{

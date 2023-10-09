@@ -1,7 +1,7 @@
 import 'package:nmg_assignment/cubit/post_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../repository/post_repository.dart';
+import '../data/repository/post_repository.dart';
 
 class PostsCubit extends Cubit<PostState> {
   final PostRepository postRepository;

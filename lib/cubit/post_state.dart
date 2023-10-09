@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
-import 'package:nmg_assignment/models/comments_response.dart';
-import 'package:nmg_assignment/models/posts_response.dart';
+import 'package:nmg_assignment/data/models/comments_response.dart';
+import 'package:nmg_assignment/data/models/posts_response.dart';
 
-import '../models/users_list_response.dart';
+import '../data/models/users_list_response.dart';
 
 enum PostStatus {
   initial, loading, fetchUsersListSuccess, fetchPostsSuccess, fetchCommentsSuccess, error

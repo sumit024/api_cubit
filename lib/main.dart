@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nmg_assignment/cubit/posts_cubit.dart';
-import 'package:nmg_assignment/ui/home_screen.dart';
+import 'package:nmg_assignment/view/home_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:nmg_assignment/repository/post_repository.dart';
+import 'package:nmg_assignment/data/repository/post_repository.dart';
 
 void main() {
   runApp(const MyApp());
