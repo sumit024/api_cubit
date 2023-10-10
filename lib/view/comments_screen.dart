@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nmg_assignment/data/models/comments_response.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 import '../cubit/post_state.dart';
 import '../cubit/posts_cubit.dart';
@@ -34,6 +35,13 @@ class _CommentsScreenState extends State<CommentsScreen> {
         listener: (context, state) {
           if (state.postStatus == PostStatus.fetchCommentsSuccess) {
             commentsList = state.commentsList ?? [];
+          }
+          if(state.postStatus== PostStatus.error){
+            Fluttertoast.showToast(
+              msg: state.exception??'',
+              toastLength: Toast.LENGTH_SHORT,
+              gravity: ToastGravity.BOTTOM,
+            );
           }
         },
         builder: (context, state) {

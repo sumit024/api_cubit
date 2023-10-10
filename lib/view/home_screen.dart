@@ -4,7 +4,7 @@ import 'package:nmg_assignment/cubit/post_state.dart';
 import 'package:nmg_assignment/cubit/posts_cubit.dart';
 import 'package:nmg_assignment/data/models/posts_response.dart';
 import 'package:nmg_assignment/view/comments_screen.dart';
-
+import 'package:fluttertoast/fluttertoast.dart';
 import '../data/models/users_list_response.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -38,6 +38,13 @@ class _HomeScreenState extends State<HomeScreen> {
           }
           if (state.postStatus == PostStatus.fetchPostsSuccess) {
             postsList = state.postsList ?? [];
+          }
+          if(state.postStatus== PostStatus.error){
+            Fluttertoast.showToast(
+                msg: state.exception??'',
+                toastLength: Toast.LENGTH_SHORT,
+                gravity: ToastGravity.BOTTOM,
+            );
           }
 
         },
